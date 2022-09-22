@@ -20,17 +20,10 @@ function displayHistory() {
 	document.getElementById("normal-footer").classList.remove("hidden");
 }
 
-function displayMonthly() {
+function displayCalendar() {
 	clearContent();
 	document.getElementById("normal-photobar").classList.remove("hidden");
-	document.getElementById("monthly").classList.remove("hidden");
-	document.getElementById("normal-footer").classList.remove("hidden");
-}
-
-function displayEvents() {
-	clearContent();
-	document.getElementById("normal-photobar").classList.remove("hidden");
-	document.getElementById("events").classList.remove("hidden");
+	document.getElementById("calendar").classList.remove("hidden");
 	document.getElementById("normal-footer").classList.remove("hidden");
 }
 
