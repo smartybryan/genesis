@@ -1,0 +1,30 @@
+body {
+	font-size: 18px;
+}
+
+.title {
+	font-size: 18px;
+}
+
+.header-photo {
+	height: 100px;
+}
+
+.small-indent {
+	margin-left:20px;
+	margin-right:20px;
+}
+
+.large-indent {
+	margin-left:40px;
+	margin-right:40px;
+}
+
+ul {
+	margin-left: 5px;
+}
+
+li span, li a {
+	font-size: 14px;
+	padding: 5px 8px;
+}

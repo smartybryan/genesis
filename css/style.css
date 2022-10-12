@@ -4,7 +4,7 @@ p {
 
 body {
   font-family: Tahoma, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 .title {
@@ -26,6 +26,10 @@ body {
 
 .center-table {
     margin: auto;
+}
+
+.header-photo {
+    height: 250px;
 }
 
 .small-indent {
@@ -57,10 +61,11 @@ li {
 }
 
 li span, li a {
+    font-size: 20px;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 12px;
     text-decoration: none;
 }
 
