@@ -3,14 +3,15 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 	<link rel='stylesheet'
-		  media='all' href='/css/style.css?v1' />
+		  media='all' href='/css/style.css?v1'/>
 	<link rel='stylesheet'
-		  media='only screen and (max-width: 800px)' href='/css/mobile.css?v1' />
+		  media='only screen and (max-width: 1024px)' href='/css/mobile.css?v1'/>
 </head>
 <body>
 
 <!--  HEADER  -->
 <content id="normal-header">
+	<br>
 	<div class="center">
 		<div class="title">The Utah Area Genesis Group</div>
 		<div class="title italic">of</div>
@@ -18,32 +19,45 @@
 	</div>
 	<br>
 
-	<ul>
-		<li><span onclick="displayHome()">Home</span></li>
-		<li><span onclick="displayCalendar()">Calendar</span></li>
-		<li><span onclick="displayHistory()">History</span></li>
-		<li>
-			<a href="https://visitor.r20.constantcontact.com/d.jsp?llr=xvhtkfcab&p=oi&m=1101837999799&sit=whhcibwcb&f=1a9aa4dd-b600-4bf6-bfe9-5b9fedbdef11"
-			   target="_new">Newsletter Signup</a></li>
-		<li><span onclick="displayContact()">Contact</span></li>
-	</ul>
+	<!-- Hamburger icon -->
+	<input class="side-menu" type="checkbox" id="side-menu" checked/>
+	<label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+	<!-- Menu -->
+<!--	<nav class="nav">-->
+<!--		<ul class="menu">-->
+<!--			<li><a href="#">Gallery</a></li>-->
+<!--			<li><a href="#">Blog</a></li>-->
+<!--			<li><a href="#">About</a></li>-->
+<!--		</ul>-->
+<!--	</nav>-->
+
+	<nav class="nav">
+		<ul>
+			<li><a href="#" onclick="displayHome()">Home</a></li>
+			<li><a href="#" onclick="displayCalendar()">Calendar</a></li>
+			<li><a href="#" onclick="displayHistory()">History</a></li>
+			<li>
+				<a href="https://visitor.r20.constantcontact.com/d.jsp?llr=xvhtkfcab&p=oi&m=1101837999799&sit=whhcibwcb&f=1a9aa4dd-b600-4bf6-bfe9-5b9fedbdef11"
+				   target="_new">Newsletter Signup</a></li>
+			<li><a href="#" onclick="displayContact()">Contact</a></li>
+		</ul>
+	</nav>
 </content>
 
 <content id="normal-photobar" class="content">
 	<div>
-		<table class="center-table">
+		<table class="center-table scrolling-wrapper-flexbox">
 			<tr>
-				<td>
+				<td class="card">
 					<img src="images/Genesis_BBQ.png" class="header-photo" alt="Genesis BBQ">
 				</td>
-				<td>
+				<td class="card">
 					<img src="images/Genesis_History.jpg" class="header-photo" alt="Genesis History">
 				</td>
-				<td>
+				<td class="card">
 					<img src="images/Genesis_Presidency_and_Wives.jpg" class="header-photo" alt="Genesis Presidency">
 				</td>
-				<td>
-
+				<td class="card">
 					<img src="images/Genesis_Sports.png" class="header-photo" alt="Genesis Sports">
 				</td>
 			</tr>
@@ -53,18 +67,18 @@
 
 <content id="history-photobar" class="content hidden">
 	<div>
-		<table class="center-table">
+		<table class="center-table scrolling-wrapper-flexbox">
 			<tr>
-				<td>
+				<td class="card">
 					<img src="images/Genesis_Bridgeforth_Hinkley.jpg" class="header-photo" alt="Genesis BBQ">
 				</td>
-				<td>
+				<td class="card">
 					<img src="images/Genesis_History.jpg" class="header-photo" alt="Genesis History">
 				</td>
-				<td>
+				<td class="card">
 					<img src="images/Genesis_Harwell_Presidency.jpg" class="header-photo" alt="Genesis Presidency">
 				</td>
-				<td>
+				<td class="card">
 					<img src="images/Genesis_Presidency.jpg" class="header-photo" alt="Genesis Sports">
 				</td>
 			</tr>
@@ -124,8 +138,7 @@
 		<div>
 			<i>(Dr. Martin Luther King Jr., 1967. "Where Do We Go From Here?"
 				Annual report delivered at the 11th Convention of
-				the Southern Christian Leadership Conference, August 16, Atlanta, GA.
-				http://www-personal.umich.edu/~gmarkus/MLK_WhereDoWeGo.pdf)</i>
+				the Southern Christian Leadership Conference, August 16, Atlanta, GA.)</i>
 		</div>
 	</div>
 	<br>
@@ -208,8 +221,6 @@
 	<h4 class="large-indent">Calendar</h4>
 	<!-- &#8269; -->
 	<div class="large-indent">
-		&#8269; November Devotional - Nov 6, 5:30pm (275 East 10600 South Sandy, UT)
-		<br>
 		&#8269; Christmas Party - Dec 3, 4pm - 7pm at the Corner Canyon Stake Center (13366 S 1300 E Draper, UT)
 		<br>
 	</div>
