@@ -78,7 +78,7 @@ li {
     float: left;
 }
 
-li span, li a {
+li a {
     font-size: 16px;
     display: block;
     color: white;
@@ -87,33 +87,7 @@ li span, li a {
     text-decoration: none;
 }
 
-li span:hover {
-    background-color: gray;
-    cursor: pointer;
-}
-
 li a:hover {
     background-color: gray;
     cursor: pointer;
 }
-
-.side-menu {
-    display: none;
-} /* Hide checkbox */
-
-/* Toggle menu icon */
-.side-menu:checked ~ nav{
-    max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
-}
-
